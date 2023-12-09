@@ -71,9 +71,11 @@ def nglspam():
         else:
             notsend += 1
             print(R+"[-]"+W+"No enviado")
-        if notsend == 10:
+        if notsend == 5:
             print(R+"[!]"+W+"Espeare 3 seg")
             time.sleep(3)
             notsend = 0
+        elif notsend == 15:
+            print(R+"[!]"+W+"Seguro todas las cuentas existen?")
        
 nglspam()
