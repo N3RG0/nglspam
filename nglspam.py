@@ -29,6 +29,7 @@ def nglspam():
     value =0
     notsend =0
     count = 0
+    tnotsend=0
     while count < numbersend:
         nglusername=nglusernames[i% len(nglusernames)]
         i+=1
@@ -67,15 +68,17 @@ def nglspam():
             notsend = 0
             value += 1
             count += 1
+            tnotsend=0
             print(G+"[+] Enviado"+W+" Usuario => {}".format(nglusername)+W+" total enviados=> {}".format(count)+W)
         else:
             notsend += 1
+            tnotsend+=1
             print(R+"[-]"+W+"No enviado")
         if notsend == 5:
             print(R+"[!]"+W+"Espeare 3 seg")
             time.sleep(3)
             notsend = 0
-        elif notsend == 15:
+        elif tnotsend == 15:
             print(R+"[!]"+W+"Seguro todas las cuentas existen?")
             break
        
