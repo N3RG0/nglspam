@@ -23,6 +23,8 @@ def nglspam():
     numbersend = int(input("Ingresa el numero de mensajes totales a enviar: "))
 
     print("**********************************************************")
+    os.system('cls' if os.name == 'nt' else 'clear') 
+    banner()
     i=0
     value =0
     notsend =0
@@ -55,7 +57,7 @@ def nglspam():
             'referrer': '',
         }
 
-        if value == 10:
+        if value == 10 or notsend==5:
             os.system('cls' if os.name == 'nt' else 'clear')
             banner()
             value=0
