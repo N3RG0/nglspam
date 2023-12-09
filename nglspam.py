@@ -57,7 +57,7 @@ def nglspam():
             'referrer': '',
         }
 
-        if value == 10 or notsend==5:
+        if value == 10 or notsend==2:
             os.system('cls' if os.name == 'nt' else 'clear')
             banner()
             value=0
@@ -72,8 +72,8 @@ def nglspam():
             notsend += 1
             print(R+"[-]"+W+"No enviado")
         if notsend == 10:
-            print(R+"[!]"+W+"Espeare 5 seg")
-            time.sleep(5)
+            print(R+"[!]"+W+"Espeare 3 seg")
+            time.sleep(3)
             notsend = 0
        
 nglspam()
