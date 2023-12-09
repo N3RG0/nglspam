@@ -77,5 +77,6 @@ def nglspam():
             notsend = 0
         elif notsend == 15:
             print(R+"[!]"+W+"Seguro todas las cuentas existen?")
+            break
        
 nglspam()
