@@ -9,3 +9,4 @@ git clone https://github.com/N3RG0/nglspam.git
 cd nglspam
 pyton3 nglspam.py
 ~~~
+kali necesita *sudo* antes de *apt install git python3*.
